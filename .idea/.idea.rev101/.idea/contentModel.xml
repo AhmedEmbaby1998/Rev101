@@ -25,6 +25,8 @@
             <e p="IHasId.cs" t="Include" />
             <e p="student.cs" t="Include" />
           </e>
+          <e p="ICoursesRepo.cs" t="Include" />
+          <e p="IStudentRepo.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

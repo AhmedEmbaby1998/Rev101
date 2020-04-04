@@ -94,7 +94,8 @@ namespace rev101.Helpers
 
             _data[id-1] = null;
             Count--;
-            if (id-1 == _endFill ) --_endFill;
+            if (id-1 == _endFill )
+                --_endFill;
         }
         
     }
