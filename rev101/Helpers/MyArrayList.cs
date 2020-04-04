@@ -8,7 +8,7 @@ namespace rev101.Helpers
 {
     public delegate int HowToExpand(int length);
     
-    public  class MyArrayList<T> :IMyArrayList<T>  where T :class,IHasId
+    public  class MyArrayList<T> :IEnumerator<T>,IEnumerable<T> ,IMyArrayList<T>where T :class,IHasId
     {
 
         private  T[] _data;
@@ -16,7 +16,9 @@ namespace rev101.Helpers
 
         public  HowToExpand HowToExpand { set; private get; }
 
-        private int _endFill=-1;
+        private int _endFill=-1;//0 based index
+
+        private int _pos=-1 ;//for Enumerating 
 
         private static readonly int DataLength =200;//length of array
         public MyArrayList(int initialLength, HowToExpand howToExpand=null)
@@ -80,10 +82,6 @@ namespace rev101.Helpers
         }
         private static int DefaultHowToExpand(int length) => length < 300 ? length *3 : length<900? length*2:470;
         
-        public IEnumerable<T> ToList()
-        {
-            return _data;
-        }
 
         public void Delete(int id)
         {
@@ -97,6 +95,45 @@ namespace rev101.Helpers
             if (id-1 == _endFill )
                 --_endFill;
         }
+
+
+        public bool MoveNext()
+        {
+            _pos++;
+            return _pos <= _endFill;
+        }
+
+        public void Reset()
+        {
+            _pos = -1;
+        }
+
+        public T Current
+        {
+            get
+            {
+                while (_data[_pos]==null)
+                {
+                    _pos++;
+                }
+                return _data[_pos];
+            }
+        }
+
+        object IEnumerator.Current => Current;
+        public void Dispose()
+        {
+           Reset();
+        }
         
+        public IEnumerator<T> GetEnumerator()
+        {
+            return this;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
     }
 }

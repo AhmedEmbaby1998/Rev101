@@ -24,6 +24,7 @@
             <e p="Enrolling.cs" t="Include" />
             <e p="IHasId.cs" t="Include" />
             <e p="student.cs" t="Include" />
+            <e p="StudentRepo.cs" t="Include" />
           </e>
           <e p="ICoursesRepo.cs" t="Include" />
           <e p="IStudentRepo.cs" t="Include" />
@@ -46,6 +47,9 @@
         </e>
         <e p="rev101.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
+        <e p="Testing" t="Include">
+          <e p="TestStudentRepo1.cs" t="Include" />
+        </e>
         <e p="Views" t="Include">
           <e p="student" t="Include">
             <e p="Index.cshtml" t="Include" />

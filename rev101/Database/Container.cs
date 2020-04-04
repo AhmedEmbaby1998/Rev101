@@ -31,9 +31,9 @@ namespace rev101.Database
         {
             public static MyArrayList<Enrolling> Enrollings = new MyArrayList<Enrolling>()
             {
-                [1] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[1]),
-                [2] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[2]),
-                [3] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[3]),
+               // [1] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[1]),
+              //  [2] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[2]),
+             //   [3] = new Enrolling(TblStudent.Students[1], TblCourse.Courses[3]),
 
                 [4] = new Enrolling(TblStudent.Students[2], TblCourse.Courses[1]),
                 [5] = new Enrolling(TblStudent.Students[2], TblCourse.Courses[2]),
