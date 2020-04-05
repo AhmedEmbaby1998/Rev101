@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using rev101.Models;
+using rev101.Models.entites;
 
 namespace rev101
 {
@@ -24,6 +26,7 @@ namespace rev101
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped<IStudentRepo, StudentRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

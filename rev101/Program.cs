@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using rev101.Helpers;
 using rev101.Models.entites;
+using rev101.Testing;
 
 namespace rev101
 {

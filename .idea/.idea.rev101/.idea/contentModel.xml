@@ -10,7 +10,10 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Controllers" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="CoursesController.cs" t="Include" />
+          <e p="StudentsController.cs" t="Include" />
+        </e>
         <e p="Database" t="Include">
           <e p="Container.cs" t="Include" />
         </e>
@@ -24,10 +27,10 @@
             <e p="Enrolling.cs" t="Include" />
             <e p="IHasId.cs" t="Include" />
             <e p="student.cs" t="Include" />
-            <e p="StudentRepo.cs" t="Include" />
           </e>
           <e p="ICoursesRepo.cs" t="Include" />
           <e p="IStudentRepo.cs" t="Include" />
+          <e p="StudentRepo.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

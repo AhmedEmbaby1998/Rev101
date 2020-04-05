@@ -100,7 +100,12 @@ namespace rev101.Helpers
         public bool MoveNext()
         {
             _pos++;
-            return _pos <= _endFill;
+            var state = _pos <= _endFill;
+            if (!state)
+            {
+                Reset();
+            }
+            return state;
         }
 
         public void Reset()
