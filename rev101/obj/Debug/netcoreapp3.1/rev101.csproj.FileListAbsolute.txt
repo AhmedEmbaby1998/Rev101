@@ -23,8 +23,13 @@ C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.RazorAsse
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.TagHelpers.input.cache
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.TagHelpers.output.cache
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.RazorCoreGenerate.cache
-C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Pages\student\Index.cshtml.g.cs
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.RazorTargetAssemblyInfo.cs
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.Views.pdb
 C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\rev101.csproj.CopyComplete
-C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\student\Index.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\students\All.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\students\GetStudent.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\students\GetStudentsCourses.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\Courses\All.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\Courses\EmptyCourses.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\students\CountStudentsInCourse.cshtml.g.cs
+C:\Users\Mr\RiderProjects\rev101\rev101\obj\Debug\netcoreapp3.1\Razor\Views\Courses\CoursesOfStudents.cshtml.g.cs

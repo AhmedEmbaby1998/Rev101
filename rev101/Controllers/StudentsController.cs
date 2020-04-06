@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 using Microsoft.AspNetCore.Mvc;
+using rev101.Database;
 using rev101.Models;
-using rev101.Models.entites;
-
 namespace rev101.Controllers
 {
     public class StudentsController:Controller
@@ -16,9 +13,33 @@ namespace rev101.Controllers
             _studentRepo = studentRepo;
         }
 
-        public ActionResult All()
+        [Route("Students")]
+        [Route("Students/All")]
+        public ViewResult All()
         {
-            return Json(_studentRepo.GetAll());
+            ViewBag.title = "Information";
+            return View(_studentRepo.GetAll());
         }
+
+        public ActionResult GetStudent(int id)
+        {
+            var student = _studentRepo.GetStudent(id);
+            ViewBag.title = student.Name;
+            return View(student);
+        }
+
+        public ActionResult GetStudentsCourses()
+        {
+            return View(_studentRepo.RolledInAllCourses());
+        }
+        
+        [Route("Students/CountStudentsInCourse/{courseId}")]
+        public ActionResult CountStudentsInCourse(int courseId)
+        {          
+            ViewBag.title = "All Courses";
+            ViewBag.courseName = Container.TblCourse.Courses[courseId].CourseName;
+            return View(_studentRepo.CountStudentEnrolledInCourse(courseId));
+        }
+        
     }
 }

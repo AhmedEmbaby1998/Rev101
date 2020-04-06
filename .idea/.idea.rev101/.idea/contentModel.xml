@@ -22,6 +22,7 @@
           <e p="MyArrayList.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="CourseRepo.cs" t="Include" />
           <e p="entites" t="Include">
             <e p="Course.cs" t="Include" />
             <e p="Enrolling.cs" t="Include" />
@@ -39,11 +40,6 @@
             </e>
           </e>
         </e>
-        <e p="Pages" t="Include">
-          <e p="student" t="Include">
-            <e p="Index.cshtml" t="Include" />
-          </e>
-        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -54,9 +50,16 @@
           <e p="TestStudentRepo1.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
-          <e p="student" t="Include">
-            <e p="Index.cshtml" t="Include" />
-            <e p="Index.cshtml.cs" t="Include" />
+          <e p="Courses" t="Include">
+            <e p="All.cshtml" t="Include" />
+            <e p="CoursesOfStudents.cshtml" t="Include" />
+            <e p="EmptyCourses.cshtml" t="Include" />
+          </e>
+          <e p="Students" t="Include">
+            <e p="All.cshtml" t="Include" />
+            <e p="CountStudentsInCourse.cshtml" t="Include" />
+            <e p="GetStudent.cshtml" t="Include" />
+            <e p="GetStudentsCourses.cshtml" t="Include" />
           </e>
         </e>
         <e p="wwwroot" t="Include">

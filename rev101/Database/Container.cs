@@ -23,7 +23,8 @@ namespace rev101.Database
             {
                 [1] = new Course("Math1"),
                 [2] = new Course("Foundation"),
-                [3] = new Course("Programming1")
+                [3] = new Course("Programming1"),
+                [4]=new Course("RC Concrete")
             };
         }
 

@@ -1,0 +1,37 @@
+﻿@model System.Collections.Generic.IEnumerable<rev101.Models.entites.Course>
+
+
+
+<html>
+<head>
+    <title>@ViewBag.title</title>
+    <style>
+          table, td, th { 
+          padding: 10px; 
+          border: 2px solid #1c87c9;
+          border-radius: 5px;
+          background-color: #e5e5e5;
+          text-align: center;
+          }
+        </style>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        @{
+            foreach (var course in Model)
+            {
+                <tr>
+                    <td>@course.Id</td>
+                    <td>@course.CourseName</td>
+                </tr>
+            }
+        }
+    </table> 
+</div>
+</body>
+</html>
